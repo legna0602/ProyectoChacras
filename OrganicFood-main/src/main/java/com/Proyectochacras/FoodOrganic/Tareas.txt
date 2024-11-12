@@ -1,0 +1,18 @@
+Agregar Producto al sistema por ejemplo:
+
+ProductoController
+Producto DTO
+Producto Model
+ProductoRepository
+ProductoService
+
+------------------
+nombre, categoria. precio,cantidad;
+//Categoría del producto, por ejemplo, fruta, verdura, etc.
+//Precio , Cantidad que tiene en stock ..
+
+    @ManyToOne
+    @JoinColumn(name = "productor_id")
+    private Productor productor; // Relación con el productor que ofrece el producto
+
+
